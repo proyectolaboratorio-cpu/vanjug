@@ -443,10 +443,9 @@ img {
     max-width: 1000px;
     margin: 0 auto 30px;
     border-radius: var(--radius-lg);
-    overflow: hidden;
+    overflow: visible;
     box-shadow: var(--shadow-strong);
     background: var(--text-dark);
-    aspect-ratio: 16/9;
 }
 
 .video-wrapper video {
@@ -564,16 +563,15 @@ img {
 .video-thumbnail {
     position: relative;
     width: 100%;
-    aspect-ratio: 16/9;
     background: linear-gradient(135deg, #3d5a3d 0%, #5a7a5a 100%);
-    overflow: hidden;
+    overflow: visible;
 }
 
 .video-thumbnail video,
 .video-thumbnail source {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height: auto;
+    display: block;
 }
 
 .video-preview {
